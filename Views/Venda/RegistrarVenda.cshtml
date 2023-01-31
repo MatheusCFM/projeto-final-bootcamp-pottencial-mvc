@@ -1,0 +1,48 @@
+@model tech_test_payment_MVC.Models.Venda
+@{
+    ViewData["Title"] = "Adicionar nova venda";
+}
+
+<h1>Adicionar nova venda</h1>
+
+<hr/>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="RegistrarVenda">
+            <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Data" class="control-label"></label>
+                <input asp-for="Data" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <input asp-for="Status" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="ItemVendido" class="control-label"></label>
+                <input asp-for="ItemVendido" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="VendedorId" class="control-label"></label>
+                <input asp-for="VendedorId" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Vendedor" class="control-label"></label>
+                <input asp-for="Vendedor" class="form-control" />
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="submit" value="RegistrarVenda" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+</hr>
+<br>
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>
